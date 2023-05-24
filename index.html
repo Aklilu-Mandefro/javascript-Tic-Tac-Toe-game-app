@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Play classic Tic-Tac-Toe game">
+        <meta name="theme-color" content="#000000">
+
+        <title>Tic-Tac-Toe</title>
+
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        
+        <link rel="manifest" href="site.webmanifest">
+        <script async src="https://cdn.jsdelivr.net/npm/pwacompat" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <span id="menu" onclick="openNav()"><img class="icon" src="/assets/icons/hamburger_icon.svg"></span>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <p>Game mode:</p>
+                <div id="gamemode">
+                    <input type="radio" id="ai" name="game_mode" onchange="startGame(); resetScore();" value="ai" checked>
+                    <label for="ai">Play against AI</label><br>
+                    <input type="radio" id="friend" name="game_mode" onchange="startGame(); resetScore();" value="friend">
+                    <label for="friend">Play against a friend</label>
+                </div>
+                <button id="reset" onclick="resetScore()">Reset scores</button>
+                <div class="follow">
+  
+  <a href="https://www.linkedin.com/in/aklilu-mandefro-messele-8a3681194/"><img title="Follow on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="mailto:aklilu.mandefro@volunteer-tech.com"><img title="Email" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://github.com/Aklilu-Mandefro"><img title="Follow on GitHub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://www.instagram.com/aklilumandefro/"><img title="Follow on Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+
+                </div>
+                <p><b>Aklilu Mandefro :)</b></p>
+                </div>
+                
+            <h1>Tic-Tac-Toe</h1>
+
+            <div class="scoreboard">
+                <h3><u id="X">You</u><div id="player-score">0</div></h3>
+                <h3><u>Draws</u><div id="game-draws">0</div></h3>
+                <h3><u id="O">Computer</u><div id="computer-score">0</div></h3>
+            </div>
+
+            <div class="play-area">
+                <div id="0" class="block"></div>
+                <div id="1" class="block"></div>
+                <div id="2" class="block"></div>
+                <div id="3" class="block"></div>
+                <div id="4" class="block"></div>
+                <div id="5" class="block"></div>
+                <div id="6" class="block"></div>
+                <div id="7" class="block"></div>
+                <div id="8" class="block"></div>
+            </div>
+
+            <h2 id="winner" style="display:show;">Good luck ;)</h2>
+            <button onclick="startGame()">Reset</button>
+        </div>
+	    <script src="/scripts/game.js"></script>
+    </body>
+</html>
