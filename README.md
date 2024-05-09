@@ -20,7 +20,7 @@ Example of the game made:<br>
 
 <img src="assets/demos/walkthrough-scores.gif" width="75%">
 
-## [Live Demo](https://tic-tac-toe-game-using-html-css-and-javascript.vercel.app/)
+## [Live Demo](https://javascript-tic-tac-toe-game-app.vercel.app/)
 ## Brief
 Tic-tac-toe is a game for two players, :x: and :o:, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.
 ___
